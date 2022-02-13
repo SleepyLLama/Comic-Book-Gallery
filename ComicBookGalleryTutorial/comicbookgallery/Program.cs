@@ -22,6 +22,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+    //pattern: "{controller=ComicBooks}/{action=Detail}");
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
